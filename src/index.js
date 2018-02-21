@@ -14,7 +14,7 @@ module.exports = function makeExchange(currency) {
         return {};
     }
 
-    while (cash != 0) {
+    while (cash > 0) {
         if (cash >= 50) {
             H = Math.floor(cash / 50);
             cash = cash - H * 50;
